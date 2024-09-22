@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the character.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Guess the hidden character.</h1>
+        <p>Try to guess the character with the fewest clues possible!</p>
+        <div id="imageContainer" class="image-container">
+            <img id="hiddenImage" src="Media/hidden.jpg" alt="Personnage caché" class="hidden">
+        </div>
+        <div id="gameSection">
+            <input type="text" id="guessInput" placeholder="Enter the character's name.">
+            <button id="submitGuess">Sudmit</button>
+        </div>
+        <div id="resultMessage"></div>
+        <p id="score">Score : <span id="scoreValue">100</span></p>
+        <div id="winMessage" class="hidden-win-message">"Bravo! You found it!" 🎉</div> <!-- Message de victoire -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
